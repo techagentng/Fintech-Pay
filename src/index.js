@@ -2,7 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import Landing from './pages/landing-page/landing';
-import Lilmodal from "./pages/sanbox/lilmodal"
+import Enduser from "./pages/enduser/enduser"
+import Userlicenseagree from "./pages/license/license"
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 
@@ -12,7 +13,8 @@ ReactDOM.render(
         <Router>
           <Routes>
             <Route exact path="/" element={<Landing />}></Route>
-            <Route exact path="/modal" element={<Lilmodal />}></Route>
+            <Route exact path="/enduser" element={<Enduser />}></Route>
+            <Route exact path="/license" element={<Userlicenseagree />}></Route>
             </Routes>
         </Router>
   </React.StrictMode>,
